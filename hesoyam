@@ -225,25 +225,7 @@ function configure_xray() {
         "type": "field",
         "inboundTag": [
           "dns-in"
-        ],
-        "outboundTag": "dns-out"
-      },
-      {
-        "type": "field",
-        "outboundTag": "blocked",
-        "protocol": [
-          "bittorrent"
-        ]
-      }
-    ]
-  }
-}
-EOF
 
-    mkdir -p /var/log/xray
-    
-    print_ok "Xray configured successfully"
-}
 
 # Configure firewall
 function configure_firewall() {
